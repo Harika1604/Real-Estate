@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HorizonHomes</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS -->
+</head>
+<body>
+    <header>
+        <h1>HorizonHomes</h1>
+        <h2>Find Your Dream Home</h2>
+        <nav>
+            <ul>
+                <li><a href="#listings">Listings</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="search-bar">
+        <input type="text" id="search" placeholder="Search by city, price, type...">
+        <button onclick="searchProperties()">Search</button>
+    </section>
+
+    <section id="listings">
+        <h2>Property Listings</h2>
+        <div id="properties-container"></div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script> <!-- Link to external JavaScript -->
+</body>
+</html>
